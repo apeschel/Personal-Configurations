@@ -1,6 +1,7 @@
 *
 
 !README
+!.tmux.conf
 !.gitignore
 !.bashrc
 !.zshrc
