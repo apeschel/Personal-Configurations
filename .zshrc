@@ -13,12 +13,13 @@ setopt   appendhistory
 
 set -o vi
 
-export PATH="/usr/local/Cellar/ruby192/1.9.2-p290/bin/:${PATH}"
 export EDITOR="vim"
 export VISUAL="vim"
 
 export PS1="%{$fg[red]%}%h%{$fg[white]%}>%{$reset_color%} "
-export RPS1="%m:%d"
+export RPS1="%{$fg[green]%}%m:%d%{$reset_color%}"
 export CLICOLOR="yes"
 
 alias grep='grep --color=auto'
+
+export PATH="/usr/local/bin:${PATH}"
