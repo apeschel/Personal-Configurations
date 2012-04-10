@@ -13,4 +13,8 @@ set listchars=tab:»·,trail:·
 set list
 set ruler
 
+set backup
+set backupdir=~/.vim/backup
+set directory=~/.vim/tmp/
+
 colorscheme vividchalk
