@@ -3,9 +3,9 @@
 files=( .vim .vimrc .bashrc .zshrc .tmux.conf )
 
 for file in ${files[@]}; do
-    dest="~/${file}"
+    dest="${HOME}/${file}"
 
-    if [ ! -f $destination ]; then
-        echo ln -s ~/Personal-Configurations/${file} $dest
+    if [[ ! -f $dest ]]; then
+        ln -s "${HOME}/Personal-Configurations/${file}" "$dest"
     fi
 done
