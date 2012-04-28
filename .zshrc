@@ -1,24 +1,37 @@
-autoload -U compinit
-compinit
+autoload -U compinit; compinit
+autoload -U colors; colors
+autoload -Uz vcs_info
 
-autoload -U colors
-colors
+# { http://briancarper.net/blog/570/git-info-in-your-zsh-prompt
+zstyle ':vcs_info:*' stagedstr '%F{28}●'
+zstyle ':vcs_info:*' unstagedstr '%F{11}●'
+zstyle ':vcs_info:*' check-for-changes true
+zstyle ':vcs_info:(sv[nk]|bzr):*' branchformat '%b%F{1}:%F{11}%r'
+zstyle ':vcs_info:*' enable git svn
+precmd () {
+    local num_untracked=$(git ls-files --other --exclude-standard 2> /dev/null | wc -l)
+    if [[ $num_untracked -ne 0 ]] {
+        local untracked="%F{red}●"
+    }
+
+    zstyle ':vcs_info:*' formats "[%F{cyan}%b%c%u${untracked}%f] "
+    vcs_info
+}
+# }
 
 HISTFILE=~/.zhistory
 HISTSIZE=1000
 SAVEHIST=1000
-
-# multiple zsh's all append to same history file (rather than last overwrites)
 setopt   appendhistory
 
 set -o vi
-
 export EDITOR="vim"
 export VISUAL="vim"
-
-export PS1="%{$fg[red]%}%h%{$fg[white]%}>%{$reset_color%} "
-export RPS1="%{$fg[green]%}%m:%d%{$reset_color%}"
 export CLICOLOR="yes"
+
+setopt prompt_subst
+export PS1='%F{red}%h%f> '
+export RPS1='${vcs_info_msg_0_}%F{yellow}%m%f:%F{green}%d%f'
 
 alias grep='grep --color=auto'
 
