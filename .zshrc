@@ -34,6 +34,7 @@ export PS1='%F{red}%h%f> '
 export RPS1='${vcs_info_msg_0_}%F{yellow}%m%f:%F{green}%d%f'
 
 alias grep='grep --color=auto'
+alias ls='ls --color=auto'
 
 export PATH="/usr/local/bin:${PATH}"
 
