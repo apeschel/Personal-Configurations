@@ -36,3 +36,7 @@ export RPS1='${vcs_info_msg_0_}%F{yellow}%m%f:%F{green}%d%f'
 alias grep='grep --color=auto'
 
 export PATH="/usr/local/bin:${PATH}"
+
+# Macros:
+    # Read man pages with vim
+    man () { vim -c "Man $*" -c "only" }

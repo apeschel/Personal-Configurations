@@ -17,6 +17,7 @@
 
 " Usage:
     set nocompatible
+    runtime ftplugin/man.vim
 
 " Indentation:
     set shiftwidth=4
