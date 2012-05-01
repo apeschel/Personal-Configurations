@@ -6,7 +6,7 @@ for file in ${files[@]}; do
     dest="${HOME}/${file}"
 
     if [[ ! -e $dest ]]; then
-        echo ln -s "${HOME}/Personal-Configurations/${file}" "$dest"
+        ln -s "${HOME}/Personal-Configurations/${file}" "$dest"
     fi
 done
 
