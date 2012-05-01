@@ -56,3 +56,18 @@
 # Macros:
     # Read man pages with vim
     man () { vim -c "Man $*" -c "only" }
+
+# { Zendesk Specific
+    if [[ -f /usr/local/lib/rvm ]]; then
+      source /usr/local/lib/rvm
+    fi
+
+    # set rvm because no more default
+    if [[ -n $(hostname | egrep "zddev|zdsys") ]]; then
+      rvm use $(rvm list | grep ree-1.8.7 | awk '{print $1}' | sort | tail -1)
+    fi
+
+    rvm use ree
+    # Add RVM to PATH for scripting
+    PATH="${PATH}:${HOME}/.rvm/bin"
+# }
