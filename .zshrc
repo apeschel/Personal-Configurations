@@ -9,7 +9,7 @@ zstyle ':vcs_info:*' check-for-changes true
 zstyle ':vcs_info:(sv[nk]|bzr):*' branchformat '%b%F{1}:%F{11}%r'
 zstyle ':vcs_info:*' enable git svn
 precmd () {
-    local num_untracked=$(git ls-files --other --exclude-standard 2> /dev/null | wc -l)
+    local num_untracked="$(git ls-files --other --exclude-standard 2> /dev/null | wc -l)"
     if [[ $num_untracked -ne 0 ]] {
         local untracked="%F{red}●"
     }
@@ -34,7 +34,9 @@ export PS1='%F{red}%h%f> '
 export RPS1='${vcs_info_msg_0_}%F{yellow}%m%f:%F{green}%d%f'
 
 alias grep='grep --color=auto'
-alias ls='ls --color=auto'
+if $(ls --color=auto 1>/dev/null 2>/dev/null); then
+    alias ls='ls --color=auto'
+fi
 
 export PATH="/usr/local/bin:${PATH}"
 
