@@ -7,6 +7,8 @@
 
     " original repos on github
     Bundle 'apeschel/vim-vividchalk'
+    Bundle 'apeschel/vim-syntax-apache'
+    Bundle 'thisivan/vim-matchit'
     " vim-scripts repos
     Bundle 'Cpp11-Syntax-Support'
     " non github repos
