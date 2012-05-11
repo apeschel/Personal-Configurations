@@ -70,4 +70,6 @@
     rvm use ree
     # Add RVM to PATH for scripting
     PATH="${PATH}:${HOME}/.rvm/bin"
+
+    PATH="${PATH}:/data/zendesk/bin"
 # }
