@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-files=( .vim .vimrc .bashrc .zshrc .tmux.conf )
+files=( .vim .vimrc .bashrc .zprofile .zshrc .tmux.conf )
 
 for file in ${files[@]}; do
     dest="${HOME}/${file}"
