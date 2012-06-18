@@ -10,6 +10,7 @@
     Bundle 'apeschel/vim-syntax-apache'
     Bundle 'thisivan/vim-matchit'
     Bundle 'xolox/vim-notes'
+    Bundle 'godlygeek/tabular'
     " vim-scripts repos
     Bundle 'Cpp11-Syntax-Support'
     " non github repos
