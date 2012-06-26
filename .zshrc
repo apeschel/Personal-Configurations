@@ -64,7 +64,7 @@
 
     # set rvm because no more default
     if [[ -n $(hostname | egrep "zddev|zdsys") ]]; then
-      rvm use $(rvm list | grep ree-1.8.7 | awk '{print $1}' | sort | tail -1)
+      rvm use ree-1.8.7
     fi
 
     rvm use ree
