@@ -11,6 +11,7 @@
     Bundle 'thisivan/vim-matchit'
     Bundle 'xolox/vim-notes'
     Bundle 'godlygeek/tabular'
+    Bundle 'Rip-Rip/clang_complete'
     " vim-scripts repos
     Bundle 'Cpp11-Syntax-Support'
     " non github repos
