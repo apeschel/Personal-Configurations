@@ -56,3 +56,8 @@
 # Macros:
     # Read man pages with vim
     man () { vim -c "Man $*" -c "only" }
+
+# Paths
+if [[ -d "${HOME}/.rvm/bin" ]]
+    PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+fi
