@@ -58,6 +58,6 @@
     man () { vim -c "Man $*" -c "only" }
 
 # Paths
-if [[ -d "${HOME}/.rvm/bin" ]]
+if [[ -d "${HOME}/.rvm/bin" ]]; then
     PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 fi
