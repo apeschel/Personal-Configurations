@@ -21,8 +21,8 @@
 
 # History
     HISTFILE=~/.zhistory
-    HISTSIZE=1000
-    SAVEHIST=1000
+    HISTSIZE=11000
+    SAVEHIST=10000
     setopt   appendhistory
 
 # Pagers and Editors
