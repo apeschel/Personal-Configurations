@@ -57,7 +57,18 @@
     # Read man pages with vim
     man () { vim -c "Man $*" -c "only" }
 
-# Paths
-if [[ -d "${HOME}/.rvm/bin" ]]; then
-    PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-fi
+# Configure Various Tools
+    rvm_dir="${HOME}/.rvm"
+    cabal_dir="${HOME}/.cabal"
+
+    tool_paths=($rvm_dir $cabal_dir)
+
+    for tool_path in ${tool_paths}; do
+        if [[ -d "$tool_path" ]]; then
+            PATH+=":${tool_path}/bin"
+        fi
+    done
+
+    if [[ -d "$rvm_dir" ]]; then
+        source /home/aaron/.rvm/scripts/rvm
+    fi
