@@ -1,6 +1,18 @@
 #!/usr/bin/env bash
 
-files=( .vim .vimrc .bashrc .zprofile .zshrc .tmux.conf .inputrc )
+declare -a files
+
+# Shell related configs
+files+=(.bashrc .zprofile .zshrc)
+
+# Multiplexer configs
+files+=(.tmux.conf)
+
+# Vim related configs
+files+=(.vim .vimrc)
+
+# Configs for readline like libraries.
+files+=(.inputrc .haskeline .editrc)
 
 for file in ${files[@]}; do
     dest="${HOME}/${file}"
