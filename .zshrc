@@ -62,14 +62,9 @@
       source /usr/local/lib/rvm
     fi
 
-    # set rvm because no more default
-    if [[ -n $(hostname | egrep "zddev|zdsys") ]]; then
-      rvm use ree-1.8.7
-    fi
-
-    rvm use ree
     # Add RVM to PATH for scripting
     PATH="${PATH}:${HOME}/.rvm/bin"
 
+    # Add Zendesk binaries to PATH
     PATH="${PATH}:/data/zendesk/bin"
 # }
