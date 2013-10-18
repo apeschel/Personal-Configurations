@@ -9,7 +9,6 @@
     Bundle 'apeschel/vim-vividchalk'
     Bundle 'apeschel/vim-syntax-apache'
     Bundle 'thisivan/vim-matchit'
-    Bundle 'xolox/vim-notes'
     Bundle 'godlygeek/tabular'
     Bundle 'Rip-Rip/clang_complete'
     " vim-scripts repos
