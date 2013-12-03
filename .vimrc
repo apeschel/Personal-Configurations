@@ -13,6 +13,7 @@
     Bundle 'Rip-Rip/clang_complete'
     " vim-scripts repos
     Bundle 'Cpp11-Syntax-Support'
+    Bundle 'nginx.vim'
     " non github repos
     "
 
