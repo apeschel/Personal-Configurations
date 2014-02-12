@@ -72,3 +72,9 @@
     if [[ -d "$rvm_dir" ]]; then
         source /home/aaron/.rvm/scripts/rvm
     fi
+
+# Source Local ZSH Configs
+    zshrc_local="${HOME}/.zshrc_local"
+    if [[ -e "$zshrc_local" ]]; then
+        source "$zshrc_local"
+    fi
