@@ -53,6 +53,9 @@
               \ | wincmd p | diffthis
     endif
 
+" CTags:
+    set tags+=~/tags/libc_tags
+
 " System Specific Configs:
     if filereadable(glob("~/.vimrc.local"))
         source ~/.vimrc.local
