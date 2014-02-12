@@ -52,3 +52,8 @@
       command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
               \ | wincmd p | diffthis
     endif
+
+" System Specific Configs:
+    if filereadable(glob("~/.vimrc.local"))
+        source ~/.vimrc.local
+    endif
