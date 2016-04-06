@@ -11,6 +11,9 @@
     Bundle 'thisivan/vim-matchit'
     Bundle 'godlygeek/tabular'
     Bundle 'Rip-Rip/clang_complete'
+    Bundle 'scrooloose/nerdtree'
+    Bundle 'gilligan/vim-lldb'
+    Plugin 'ekalinin/Dockerfile.vim'
     " vim-scripts repos
     Bundle 'Cpp11-Syntax-Support'
     Bundle 'nginx.vim'
@@ -31,6 +34,7 @@
     set tabstop=8
     set backspace=indent,eol,start
     set listchars=tab:»·,trail:·
+    set foldmethod=marker
 
 " Interface:
     syntax on
