@@ -3,6 +3,9 @@
     autoload -U colors; colors
     autoload -Uz vcs_info
 
+# plugins
+    plugins=(git ssh-agent)
+
 # http://briancarper.net/blog/570/git-info-in-your-zsh-prompt
     zstyle ':vcs_info:*' stagedstr '%F{28}●'
     zstyle ':vcs_info:*' unstagedstr '%F{11}●'
