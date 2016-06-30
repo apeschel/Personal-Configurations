@@ -3,20 +3,20 @@
         filetype off
         set rtp+=~/.vim/bundle/vundle/
         call vundle#rc()
-        Bundle 'gmarik/vundle'
+        Plugin 'gmarik/vundle'
 
     " original repos on github
-    Bundle 'apeschel/vim-vividchalk'
-    Bundle 'apeschel/vim-syntax-apache'
-    Bundle 'thisivan/vim-matchit'
-    Bundle 'godlygeek/tabular'
-    Bundle 'Rip-Rip/clang_complete'
-    Bundle 'scrooloose/nerdtree'
-    Bundle 'gilligan/vim-lldb'
+    Plugin 'apeschel/vim-vividchalk'
+    Plugin 'apeschel/vim-syntax-apache'
+    Plugin 'apeschel/pylint.vim'
+    Plugin 'thisivan/vim-matchit'
+    Plugin 'godlygeek/tabular'
+    Plugin 'Rip-Rip/clang_complete'
+    Plugin 'scrooloose/nerdtree'
     Plugin 'ekalinin/Dockerfile.vim'
     " vim-scripts repos
-    Bundle 'Cpp11-Syntax-Support'
-    Bundle 'nginx.vim'
+    Plugin 'Cpp11-Syntax-Support'
+    Plugin 'nginx.vim'
     " non github repos
     "
 
