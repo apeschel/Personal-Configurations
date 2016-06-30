@@ -65,3 +65,5 @@
     if [[ -e "$zshrc_local" ]]; then
         source "$zshrc_local"
     fi
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
