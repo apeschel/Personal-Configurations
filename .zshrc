@@ -36,8 +36,7 @@
 
 # Prompt
     setopt prompt_subst
-    export PS1='%F{red}%h%f> '
-    export RPS1='${vcs_info_msg_0_}%F{yellow}%m%f:%F{green}%d%f'
+    export PS1='${vcs_info_msg_0_}%F{red}%h%f> '
 
 # Platform Specific
     case $(uname -s) in
