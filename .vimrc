@@ -14,6 +14,11 @@
     Plugin 'Rip-Rip/clang_complete'
     Plugin 'scrooloose/nerdtree'
     Plugin 'ekalinin/Dockerfile.vim'
+    Plugin 'Shougo/unite.vim'
+    Plugin 'Quramy/vison'
+    Plugin 'derekwyatt/vim-scala'
+    Plugin 'PProvost/vim-ps1'
+    Plugin 'jez/vim-superman'
     " vim-scripts repos
     Plugin 'Cpp11-Syntax-Support'
     Plugin 'nginx.vim'

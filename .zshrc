@@ -57,7 +57,14 @@
 
 # Macros:
     # Read man pages with vim
-    man () { vim -c "Man $*" -c "only" }
+    vman() {
+      vim -c "SuperMan $*"
+
+      if [ "$?" != "0" ]; then
+        echo "No manual entry for $*"
+      fi
+    }
+    compdef vman="man"
 
 # Source Local ZSH Configs
     zshrc_local="${HOME}/.zshrc_local"
