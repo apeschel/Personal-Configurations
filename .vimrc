@@ -19,6 +19,11 @@
     Plugin 'derekwyatt/vim-scala'
     Plugin 'PProvost/vim-ps1'
     Plugin 'jez/vim-superman'
+    Plugin 'hashivim/vim-terraform'
+    Plugin 'google/vim-jsonnet'
+    Plugin 'rodjek/vim-puppet'
+    Plugin 'tpope/vim-fugitive'
+    Plugin 'vim-syntastic/syntastic'
     " vim-scripts repos
     Plugin 'Cpp11-Syntax-Support'
     Plugin 'nginx.vim'
