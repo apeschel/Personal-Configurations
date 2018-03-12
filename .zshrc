@@ -3,6 +3,9 @@
     autoload -U colors; colors
     autoload -Uz vcs_info
 
+# ZSH Options
+    setopt share_history
+
 # plugins
     plugins=(git ssh-agent)
 
@@ -24,8 +27,8 @@
 
 # History
     HISTFILE=~/.zhistory
-    HISTSIZE=11000
-    SAVEHIST=10000
+    HISTSIZE=1100000
+    SAVEHIST=1000000
     setopt   appendhistory
 
 # Pagers and Editors

@@ -23,7 +23,8 @@
     Plugin 'google/vim-jsonnet'
     Plugin 'rodjek/vim-puppet'
     Plugin 'tpope/vim-fugitive'
-    Plugin 'vim-syntastic/syntastic'
+    Plugin 'wannesm/wmgraphviz.vim'
+    Plugin 'mustache/vim-mustache-handlebars'
     " vim-scripts repos
     Plugin 'Cpp11-Syntax-Support'
     Plugin 'nginx.vim'
