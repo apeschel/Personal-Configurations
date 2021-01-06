@@ -8,15 +8,12 @@
     " original repos on github
     Plugin 'apeschel/vim-vividchalk'
     Plugin 'apeschel/vim-syntax-apache'
-    Plugin 'apeschel/pylint.vim'
     Plugin 'thisivan/vim-matchit'
     Plugin 'godlygeek/tabular'
-    Plugin 'Rip-Rip/clang_complete'
     Plugin 'scrooloose/nerdtree'
     Plugin 'ekalinin/Dockerfile.vim'
     Plugin 'Shougo/unite.vim'
     Plugin 'Quramy/vison'
-    Plugin 'derekwyatt/vim-scala'
     Plugin 'PProvost/vim-ps1'
     Plugin 'jez/vim-superman'
     Plugin 'hashivim/vim-terraform'
@@ -25,6 +22,9 @@
     Plugin 'tpope/vim-fugitive'
     Plugin 'wannesm/wmgraphviz.vim'
     Plugin 'mustache/vim-mustache-handlebars'
+    Plugin 'vito-c/jq.vim'
+    Plugin 'vim-syntastic/syntastic'
+    Plugin 'Glench/Vim-Jinja2-Syntax'
     " vim-scripts repos
     Plugin 'Cpp11-Syntax-Support'
     Plugin 'nginx.vim'
@@ -75,3 +75,13 @@
     if filereadable(glob("~/.vimrc.local"))
         source ~/.vimrc.local
     endif
+
+" Syntastic:
+    set statusline+=%#warningmsg#
+    set statusline+=%{SyntasticStatuslineFlag()}
+    set statusline+=%*
+
+    let g:syntastic_always_populate_loc_list = 1
+    let g:syntastic_auto_loc_list = 1
+    let g:syntastic_check_on_open = 1
+    let g:syntastic_check_on_wq = 0
